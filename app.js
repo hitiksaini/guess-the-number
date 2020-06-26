@@ -1,7 +1,7 @@
 // GUESS THE NUMBER GAME STEP BY STEP EXPLANATION
 //     ~ Hitik Saini.
-//Generating a random number from 1-100
-let randomNumber = parseInt((Math.random()*100)+1);
+//Generating a random number from 1-500
+let randomNumber = parseInt((Math.random()*500)+1);
 //make variables
 const submit = document.querySelector('#user_guess');
 const userInput = document.querySelector('#guessField');
@@ -31,7 +31,7 @@ function validateGuess(guess){
         alert('Not a valid number');
     } else if (guess < 1) {
         alert('Enter number greater than 1');
-    } else if (guess > 100){
+    } else if (guess > 500){
         alert('Please enter a number less than 100')
     } else {
         //Keep record of number of attempted guesses
@@ -94,7 +94,7 @@ function newGame(){
     const newGameButton = document.querySelector('#newGame');
     newGameButton.addEventListener('click', function(){
         //re-initialise eveything to fresh start
-        randomNumber = parseInt((Math.random()*100)+1);
+        randomNumber = parseInt((Math.random()*500)+1);
         previousGuesses = [];
         numGuesses = 1;
         guessSlot.innerHTML = '';
