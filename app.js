@@ -38,7 +38,7 @@ function validateGuess(guess){
         //push it to empty array created above
         previousGuesses.push(guess);
         //Check if game is over
-        if (numGuesses === 10){
+        if (numGuesses === 11){
             displayGuesses(guess);
             displayMessage(`Game Over! Number was ${randomNumber}`);
             endGame();
