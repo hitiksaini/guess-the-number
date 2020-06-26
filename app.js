@@ -32,7 +32,7 @@ function validateGuess(guess){
     } else if (guess < 1) {
         alert('Enter number greater than 1');
     } else if (guess > 500){
-        alert('Please enter a number less than 100')
+        alert('Please enter a number less than 500')
     } else {
         //Keep record of number of attempted guesses
         //push it to empty array created above
